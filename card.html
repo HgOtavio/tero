@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>card</title>
+    <style>
+       p {
+        font-family: Arial, Helvetica, sans-serif;
+        align-self :justify; 
+       }
+        h1 {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2 {
+            color: rgb(176, 123, 226);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {
+            color: purple;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .card {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            perspective: 100000px;
+        }
+        .card-inner {
+            position: relative;
+            width: 25%;
+            height: 25%;
+            text-align:  center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        .card-back {
+            background-color: white;
+            transform: rotateY(180deg);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+        <div class="card">
+            <h2>QUEM É?</h2>
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://th.bing.com/th/id/OIP.VtFCRAcMqJNU6bFkMy1R-AHaHq?rs=1&pid=ImgDetMain"
+                            style="width: 250px;height: 250px;">
+                </div>
+                  
+                <div class="card-back">
+                    <h1>CLÁSSICO</h1>
+                    <p>Steven Quartz Demayo Diamond Universe (em português Steven Quartz Demayo Diamante Universo), também conhecido como Steven Quartz Universe é um personagem fictício e o personagem titular da série animada Steven Universe, criada por Rebecca Sugar. Steven é um híbrido entre uma "Gem", um ser alienígena fictício que existe como uma pedra preciosa mágica projetando um corpo de luz em massa e um ser humano normal. Dublado por Zach Callison, ele estreou no episódio piloto da série e fez sua estreia na série principal no primeiro episódio, "Gem Glow". Ele aparece em quase todos os episódios da série, com exceção de "Jungle Moon", onde ele é fundido com Connie como Stevonnie durante todo o episódio. O enredo é desenvolvido a partir da perspectiva de Steven: o público aprende sobre o enredo e história de fundo como Steven faz.</p>
+                      
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAzLKova-FAxXipJUCHY-VChIQFnoECDAQAQ&url=https%3A%2F%2Fwww.cartoonnetwork.com.br%2Fshow%2Fsteven-universo&usg=AOvVaw0UynYW_pj3clx4fZI1N2xD&opi=89978449">
+                        Conheça mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

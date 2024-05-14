@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body onclick="dados()"> 
+
+        
+    
+    <div class="contrato">
+        <h1> Leia o contrato: </h1>
+        <p id="dados_contato"></p>
+    </div>
+
+    <label for="cpf" id="cpf" >CPF</label>
+    <input type="text" >
+
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+    <script>
+        function dados(){
+            let name = document.getElementById("nome").value
+            let rg = document.getElementById("rg").value
+            let cpf = document.getElementById("cpf").value
+            let profission = document.getElementById("profi").value
+            let cep = document.getElementById("cep").value
+
+            let colocar_dados = document.getElementById("dados_contrato").innerHTML = `Eu, $(nome), de rg: $(), portador do CPF:, de profissão: $(profission) do cep: $(cep), <strong>  Aceito os termos </strong>`        }
+    
+            $(`#cpf`).mask(`000.000.000-00`)
+        
+    </script>
+</body>
+</html>

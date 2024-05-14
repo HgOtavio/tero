@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span style="color: brown; "  id="jam">00</span>
+    <span>:</span>
+    <span id="menit">00</span>
+    <span>:</span>
+    <span id="detik">00</span>
+    <span>:</span>
+    <span id="mile">000
+        
+    </span>
+
+    
+    
+<Script>
+    let jam = document.getElementById("jam")
+    let menit = document.getElementById('menit')
+    let detik = document.getElementById('detik')
+    let mile = document.getElementById('mile')
+
+    setInterval(function()  {
+        
+    
+        let waktu = new Date()
+        mile.textContent = waktu.getMilliseconds()
+        jam.textContent = waktu.getHours()
+        menit.textContent = waktu.getMinutes()
+        detik.textContent = waktu.getSeconds()
+    
+       
+    })
+
+    
+</Script>
+
+  
+    
+</body>
+ 
+</html>
